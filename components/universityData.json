@@ -1,0 +1,57 @@
+{
+    "classrooms": [
+      { "building": "Main", "roomNumber": "101", "capacity": 30 },
+      { "building": "Science", "roomNumber": "202", "capacity": 50 },
+      { "building": "Arts", "roomNumber": "301", "capacity": 25 }
+    ],
+    "departments": [
+      { "deptName": "Computer Science", "building": "Main", "budget": 500000 },
+      { "deptName": "Mathematics", "building": "Science", "budget": 300000 },
+      { "deptName": "Physics", "building": "Arts", "budget": 400000 }
+    ],
+    "courses": [
+      { "courseId": "CS101", "title": "Introduction to Computer Science", "deptName": "Computer Science", "credits": 3 },
+      { "courseId": "MATH101", "title": "Calculus I", "deptName": "Mathematics", "credits": 4 },
+      { "courseId": "PHYS101", "title": "General Physics", "deptName": "Physics", "credits": 3 }
+    ],
+    "instructors": [
+      { "id": "I001", "name": "Alice Smith", "deptName": "Computer Science", "salary": 80000 },
+      { "id": "I002", "name": "Bob Johnson", "deptName": "Mathematics", "salary": 75000 },
+      { "id": "I003", "name": "Charlie Brown", "deptName": "Physics", "salary": 72000 }
+    ],
+    "sections": [
+      { "courseId": "CS101", "secId": "001", "semester": "Fall", "year": 2023, "building": "Main", "roomNumber": "101", "timeSlotId": "T01" },
+      { "courseId": "MATH101", "secId": "001", "semester": "Fall", "year": 2023, "building": "Science", "roomNumber": "202", "timeSlotId": "T02" },
+      { "courseId": "PHYS101", "secId": "001", "semester": "Fall", "year": 2023, "building": "Arts", "roomNumber": "301", "timeSlotId": "T03" }
+    ],
+    "teaches": [
+      { "id": "I001", "courseId": "CS101", "secId": "001", "semester": "Fall", "year": 2023 },
+      { "id": "I002", "courseId": "MATH101", "secId": "001", "semester": "Fall", "year": 2023 },
+      { "id": "I003", "courseId": "PHYS101", "secId": "001", "semester": "Fall", "year": 2023 }
+    ],
+    "students": [
+      { "id": "S001", "name": "David Wilson", "deptName": "Computer Science", "totCred": 60 },
+      { "id": "S002", "name": "Eva Adams", "deptName": "Mathematics", "totCred": 30 },
+      { "id": "S003", "name": "Frank Lee", "deptName": "Physics", "totCred": 45 }
+    ],
+    "takes": [
+      { "id": "S001", "courseId": "CS101", "secId": "001", "semester": "Fall", "year": 2023, "grade": "A" },
+      { "id": "S002", "courseId": "MATH101", "secId": "001", "semester": "Fall", "year": 2023, "grade": "B+" },
+      { "id": "S003", "courseId": "PHYS101", "secId": "001", "semester": "Fall", "year": 2023, "grade": "A-" }
+    ],
+    "advisors": [
+      { "sID": "S001", "iID": "I001" },
+      { "sID": "S002", "iID": "I002" },
+      { "sID": "S003", "iID": "I003" }
+    ],
+    "timeSlots": [
+      { "timeSlotId": "T01", "day": "Monday", "startTime": "09:00", "endTime": "10:30" },
+      { "timeSlotId": "T02", "day": "Tuesday", "startTime": "11:00", "endTime": "12:30" },
+      { "timeSlotId": "T03", "day": "Wednesday", "startTime": "13:00", "endTime": "14:30" }
+    ],
+    "prerequisites": [
+      { "courseId": "CS102", "prereqId": "CS101" },
+      { "courseId": "MATH201", "prereqId": "MATH101" }
+    ]
+  }
+  
